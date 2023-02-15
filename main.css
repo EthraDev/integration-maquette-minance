@@ -5,4 +5,118 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+:root {
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 18fr 53fr 28fr;
+  align-items: center;
+  padding: 14px 0;
+  gap: 1%;
+}
+.navbar .navbar-section-1 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1em 2em;
+}
+.navbar .navbar-section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4em;
+}
+.navbar .navbar-section-2 div {
+  display: flex;
+  gap: 6px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 10px;
+  width: 60%;
+}
+.navbar .navbar-section-2 div img {
+  width: 5%;
+}
+.navbar .navbar-section-2 div input {
+  border: none;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+.navbar .navbar-section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+.navbar .navbar-section-3 img {
+  width: 8%;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 18fr 53fr 28fr;
+  gap: 1%;
+}
+.main-grid .main-div-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 4em 2em;
+}
+.main-grid .main-div-1 .dashboard-section-1 {
+  background-image: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 28px;
+  padding: 10px;
+  color: black;
+  border-radius: 14px;
+}
+.main-grid .main-div-1 .dashboard-section-1 img {
+  width: 20%;
+}
+.main-grid .main-div-1 .dashboard-section-1 h3 {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.main-grid .main-div-1 .dashboard-section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.main-grid .main-div-1 .dashboard-section-2 div {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0 10px;
+}
+.main-grid .main-div-1 .dashboard-section-2 div img {
+  width: 20%;
+}
+.main-grid .main-div-1 .logout {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 2em 3em;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.main-grid .main-div-1 .logout img {
+  width: 20%;
+}
+.main-grid .main-div-2 {
+  height: 80vh;
+  background-color: blue;
+}
+.main-grid .main-div-3 {
+  height: 80vh;
+  background-color: yellow;
+}
+
 /*# sourceMappingURL=main.css.map */
