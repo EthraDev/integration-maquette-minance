@@ -15,7 +15,6 @@
   grid-template-columns: 18fr 53fr 28fr;
   align-items: center;
   padding: 14px 0;
-  gap: 1%;
 }
 .navbar .navbar-section-1 {
   display: flex;
@@ -45,6 +44,7 @@
   font-size: 16px;
   color: black;
   background-color: white;
+  outline: none;
 }
 .navbar .navbar-section-3 {
   display: flex;
@@ -59,7 +59,6 @@
 .main-grid {
   display: grid;
   grid-template-columns: 18fr 53fr 28fr;
-  gap: 1%;
 }
 .main-grid .main-div-1 {
   display: flex;
@@ -83,6 +82,7 @@
 .main-grid .main-div-1 .dashboard-section-1 h3 {
   font-weight: 100;
   letter-spacing: 2px;
+  opacity: 0.7;
 }
 .main-grid .main-div-1 .dashboard-section-2 {
   display: flex;
@@ -98,9 +98,12 @@
 .main-grid .main-div-1 .dashboard-section-2 div img {
   width: 20%;
 }
+.main-grid .main-div-1 .dashboard-section-2 div h3 {
+  opacity: 0.7;
+}
 .main-grid .main-div-1 .logout {
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  bottom: -15%;
   left: 0;
   padding: 2em 3em;
   display: flex;
@@ -114,9 +117,92 @@
   height: 80vh;
   background-color: blue;
 }
-.main-grid .main-div-3 {
-  height: 80vh;
-  background-color: yellow;
+.main-grid .main-div-3 .title-transaction {
+  font-size: 20px;
+  margin-left: 1em;
+}
+.main-grid .main-div-3 .transaction-section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 12px 18px;
+  margin-bottom: 20px;
+}
+.main-grid .main-div-3 .transaction-section .transaction-section-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+.main-grid .main-div-3 .transaction-section .transaction-section-main .part-logo-transaction {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main-grid .main-div-3 .transaction-section .transaction-section-main .part-logo-transaction img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.main-grid .main-div-3 .transaction-section .transaction-section-main .part-logo-transaction div {
+  display: flex;
+  flex-direction: column;
+}
+.main-grid .main-div-3 .transaction-section .transaction-section-main .part-logo-transaction div h3 {
+  font-size: 14px;
+  opacity: 0.7;
+}
+.main-grid .main-div-3 .transaction-section .transaction-section-main .part-logo-transaction .white {
+  opacity: 1;
+}
+.main-grid .main-div-3 .transaction-section .transaction-section-main .part-span-transaction {
+  font-size: 14px;
+}
+.main-grid .main-div-3 .transaction-section .transaction-section-main .part-span-transaction span {
+  color: #4AD619;
+}
+.main-grid .main-div-3 .transaction-section .transaction-section-main .part-span-transaction h3 {
+  opacity: 0.7;
+}
+.main-grid .main-div-3 .assets-section {
+  padding: 12px 18px;
+}
+.main-grid .main-div-3 .assets-section h3 {
+  margin-bottom: 10px;
+}
+.main-grid .main-div-3 .assets-section .bitcoin {
+  background-image: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.main-grid .main-div-3 .assets-section .bitcoin img {
+  width: 14%;
+}
+.main-grid .main-div-3 .assets-section .bitcoin div {
+  display: flex;
+  justify-content: space-between;
+}
+.main-grid .main-div-3 .assets-section .etherum {
+  background-image: linear-gradient(99.56deg, #FAFF00 35.82%, #29ABE2 64.75%, rgba(255, 255, 255, 0.7) 91.33%);
+  margin-bottom: 20px;
+  padding: 14px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: black;
+}
+.main-grid .main-div-3 .assets-section .etherum img {
+  width: 51.19px;
+  height: 51.9px;
+  object-fit: contain;
+}
+.main-grid .main-div-3 .assets-section .etherum div {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */
