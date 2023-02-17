@@ -103,7 +103,7 @@
 }
 .main-grid .main-div-1 .logout {
   position: absolute;
-  bottom: -15%;
+  bottom: -13%;
   left: 0;
   padding: 2em 3em;
   display: flex;
@@ -112,10 +112,6 @@
 }
 .main-grid .main-div-1 .logout img {
   width: 20%;
-}
-.main-grid .main-div-2 {
-  height: 80vh;
-  background-color: blue;
 }
 .main-grid .main-div-3 .title-transaction {
   font-size: 20px;
@@ -203,6 +199,106 @@
 .main-grid .main-div-3 .assets-section .etherum div {
   display: flex;
   justify-content: space-between;
+}
+.main-grid .main-div-2 .graph-section-1 {
+  display: flex;
+  align-items: center;
+  gap: 6em;
+  margin-bottom: 16px;
+}
+.main-grid .main-div-2 .graph-section-1 .graph-btn-div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main-grid .main-div-2 .graph-section-1 .graph-btn-div1 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-grid .main-div-2 .graph-section-1 .graph-btn-div1 div p {
+  background-color: #FAFF00;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  color: black;
+}
+.main-grid .main-div-2 .graph-section-1 .graph-btn-div1 h4 {
+  opacity: 0.7;
+}
+.main-grid .main-div-2 .graph-section-1 .graph-btn-div2 {
+  background-color: #292727;
+  padding: 6px 14px;
+  border-radius: 12px;
+}
+.main-grid .main-div-2 .graph-section-1 .graph-btn-div2 button {
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background-color: #292727;
+  border: none;
+}
+.main-grid .main-div-2 .graph-section-1 .graph-btn-div2 .btn1 {
+  background-color: #0D0C0C;
+}
+.main-grid .main-div-2 .graph-section-2 {
+  height: 400px;
+  background-color: rgba(48, 53, 65, 0.6705882353);
+  border-radius: 30px;
+}
+.main-grid .main-div-2 .graph-section-3 .graph-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-bitcoin {
+  background-color: rgba(48, 53, 65, 0.6705882353);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-bitcoin .icon {
+  width: 30px;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-bitcoin p {
+  font-size: 14px;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-bitcoin span {
+  font-size: 14px;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-bitcoin .span-1 {
+  color: #1970D6;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-bitcoin .span-2 {
+  color: #4AD619;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-etherum {
+  background-color: rgba(48, 53, 65, 0.6705882353);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-radius: 20px;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-etherum .icon {
+  width: 30px;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-etherum p {
+  font-size: 14px;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-etherum span {
+  font-size: 14px;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-etherum .span-1 {
+  color: #6C1182;
+}
+.main-grid .main-div-2 .graph-section-3 .recent-etherum .span-2 {
+  color: #D61919;
 }
 
 /*# sourceMappingURL=main.css.map */

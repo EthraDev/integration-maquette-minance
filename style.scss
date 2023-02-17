@@ -116,7 +116,7 @@
 
         .logout {
             position: absolute;
-            bottom: -15%;
+            bottom: -13%;
             left: 0;
             padding: 2em 3em;
             display: flex;
@@ -127,11 +127,6 @@
                 width: 20%;
             }
         }
-    }
-
-    .main-div-2 {
-        height: 80vh;
-        background-color: blue;
     }
 
     .main-div-3 {
@@ -236,6 +231,132 @@
                 div {
                     display: flex; 
                     justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    .main-div-2 {
+        .graph-section-1 {
+            display: flex;
+            align-items: center;
+            gap: 6em;
+            margin-bottom: 16px;
+
+            .graph-btn-div1 {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    p {
+                        background-color: #FAFF00;
+                        padding: 4px 8px;
+                        border-radius: 6px;
+                        font-size: 10px;
+                        color: black;
+                    }
+                }
+
+                h4 {
+                    opacity: 0.7;
+                }
+            }
+
+            .graph-btn-div2 {
+                background-color: #292727;
+                padding: 6px 14px;
+                border-radius: 12px;
+
+                button {
+                    color: white;
+                    padding: 4px 8px;
+                    border-radius: 10px;
+                    background-color: #292727;
+                    border: none;
+                }
+
+                .btn1 {
+                    background-color: #0D0C0C;
+                }
+            }
+        }
+
+        .graph-section-2 {
+            height: 400px;
+            background-color: #303541AB;
+            border-radius: 30px;
+        }
+
+        .graph-section-3 {
+            .graph-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 16px;
+                margin-bottom: 20px;
+            }
+
+            .recent-bitcoin {
+                background-color: #303541AB;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 18px 20px;
+                border-radius: 20px;
+                margin-bottom: 20px;
+
+                .icon {
+                    width: 30px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+
+                .span-1 {
+                    color: #1970D6;
+                }
+
+                .span-2 {
+                    color: #4AD619;
+                }
+            }
+
+            .recent-etherum {
+                background-color: #303541AB;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 18px 20px;
+                border-radius: 20px;
+
+                .icon {
+                    width: 30px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                span {
+                    font-size: 14px;
+                }
+
+                .span-1 {
+                    color: #6C1182;
+                }
+
+                .span-2 {
+                    color: #D61919;
                 }
             }
         }
