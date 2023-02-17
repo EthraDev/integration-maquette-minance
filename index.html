@@ -86,7 +86,30 @@
                 </div>
 
                 <div class="graph-section-2">
-
+                    <div class="btn-up-graph">
+                        <div class="btn-graph">
+                            <button>1H</button>
+                            <button class="btn-graph-1">1D</button>
+                            <button>3D</button>
+                            <button>1W</button>
+                            <button>1M</button>
+                            <img src="img/calendar.svg" alt="calendar">
+                        </div>
+                        <div class="change">
+                            <div>
+                                <img src="img/bitcoin_white.svg" alt="bitcoin">
+                                <p>BTC</p>
+                                <img src="img/check.svg" alt="check">
+                            </div>
+                                <img src="img/fleches.png" alt="fleches">
+                            <div>
+                                <img src="img/etherum-icone-white.png" alt="etherium">
+                                <p>ETH</p>
+                                <img src="img/check.svg" alt="check">
+                            </div>
+                        </div>
+                    </div>
+                    <canvas id="graph"></canvas>
                 </div>
 
                 <div class="graph-section-3">
@@ -221,5 +244,8 @@
             </div>
         </section>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

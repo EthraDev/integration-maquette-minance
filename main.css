@@ -16,17 +16,32 @@
   align-items: center;
   padding: 14px 0;
 }
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 4px 0;
+  }
+}
 .navbar .navbar-section-1 {
   display: flex;
   align-items: center;
   gap: 4px;
   padding: 1em 2em;
 }
+@media screen and (max-width: 600px) {
+  .navbar .navbar-section-1 {
+    font-size: 14px;
+  }
+}
 .navbar .navbar-section-2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-right: 4em;
+}
+@media screen and (max-width: 600px) {
+  .navbar .navbar-section-2 h2 {
+    font-size: 14px;
+  }
 }
 .navbar .navbar-section-2 div {
   display: flex;
@@ -43,7 +58,7 @@
   border: none;
   font-size: 16px;
   color: black;
-  background-color: white;
+  background-color: transparent;
   outline: none;
 }
 .navbar .navbar-section-3 {
@@ -55,16 +70,34 @@
 .navbar .navbar-section-3 img {
   width: 8%;
 }
+@media screen and (max-width: 600px) {
+  .navbar .navbar-section-3 img {
+    width: 30px;
+  }
+}
 
 .main-grid {
   display: grid;
   grid-template-columns: 18fr 53fr 28fr;
+}
+@media screen and (max-width: 1000px) {
+  .main-grid {
+    grid-template-columns: 100fr;
+    margin-bottom: 1em;
+  }
 }
 .main-grid .main-div-1 {
   display: flex;
   flex-direction: column;
   gap: 32px;
   padding: 4em 2em;
+}
+@media screen and (max-width: 1000px) {
+  .main-grid .main-div-1 {
+    display: none;
+    height: 120vh;
+    overflow-y: hidden;
+  }
 }
 .main-grid .main-div-1 .dashboard-section-1 {
   background-image: linear-gradient(266.37deg, #FAFF00 -5.82%, #FAFF00 15.95%, #1970D6 41.2%, #6C1182 72.88%);
@@ -103,7 +136,7 @@
 }
 .main-grid .main-div-1 .logout {
   position: absolute;
-  bottom: -13%;
+  bottom: -18%;
   left: 0;
   padding: 2em 3em;
   display: flex;
@@ -112,6 +145,13 @@
 }
 .main-grid .main-div-1 .logout img {
   width: 20%;
+}
+@media screen and (max-width: 1000px) {
+  .main-grid .main-div-3 {
+    display: none;
+    height: 120vh;
+    overflow-y: hidden;
+  }
 }
 .main-grid .main-div-3 .title-transaction {
   font-size: 20px;
@@ -163,11 +203,11 @@
   padding: 12px 18px;
 }
 .main-grid .main-div-3 .assets-section h3 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .main-grid .main-div-3 .assets-section .bitcoin {
   background-image: linear-gradient(98.73deg, #611D8D 35.75%, #2F7EC1 73.26%);
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   padding: 14px;
   border-radius: 30px;
   display: flex;
@@ -200,11 +240,24 @@
   display: flex;
   justify-content: space-between;
 }
+.main-grid .main-div-2 .graph-section-2 {
+  padding: 10px 16px;
+}
+.main-grid .main-div-2 .graph-section-2 #graph {
+  height: 400px;
+  padding: 10px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .main-grid .main-div-2 {
+    padding: 0 6em;
+  }
+}
 .main-grid .main-div-2 .graph-section-1 {
   display: flex;
   align-items: center;
   gap: 6em;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .main-grid .main-div-2 .graph-section-1 .graph-btn-div1 {
   display: flex;
@@ -242,16 +295,66 @@
   background-color: #0D0C0C;
 }
 .main-grid .main-div-2 .graph-section-2 {
-  height: 400px;
+  height: 470px;
   background-color: rgba(48, 53, 65, 0.6705882353);
   border-radius: 30px;
+}
+.main-grid .main-div-2 .graph-section-2 .btn-up-graph {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.main-grid .main-div-2 .graph-section-2 .btn-up-graph .change {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+.main-grid .main-div-2 .graph-section-2 .btn-up-graph .change div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: black;
+  padding: 6px 14px;
+}
+.main-grid .main-div-2 .graph-section-2 .btn-up-graph .change div img {
+  width: 15px;
+}
+.main-grid .main-div-2 .graph-section-2 .btn-up-graph .change div p {
+  font-size: 14px;
+}
+.main-grid .main-div-2 .graph-section-2 .btn-up-graph .btn-graph {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.main-grid .main-div-2 .graph-section-2 .btn-up-graph .btn-graph button {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 4px;
+  font-size: 16px;
+}
+.main-grid .main-div-2 .graph-section-2 .btn-up-graph .btn-graph .btn-graph-1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+.main-grid .main-div-2 .graph-section-2 .btn-up-graph .btn-graph img {
+  background-color: black;
+  border-radius: 10px;
+  width: 30px;
+  padding: 4px;
 }
 .main-grid .main-div-2 .graph-section-3 .graph-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 16px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .main-grid .main-div-2 .graph-section-3 .recent-bitcoin {
   background-color: rgba(48, 53, 65, 0.6705882353);
@@ -260,7 +363,7 @@
   justify-content: space-between;
   padding: 18px 20px;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .main-grid .main-div-2 .graph-section-3 .recent-bitcoin .icon {
   width: 30px;
